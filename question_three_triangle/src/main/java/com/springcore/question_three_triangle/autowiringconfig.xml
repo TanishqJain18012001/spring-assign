@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+	   <context:annotation-config />
+
+		<bean name="triangle_info" class="com.springcore.question_three_triangle.Triangle_Info">
+			<property name="height" value="200" />
+			<property name="width" value="200" />
+		</bean> 
+
+
+		<!--AUTOWIRING USING "annotations"-->
+		<bean class="com.springcore.question_three_triangle.Triangle" name="triangle" />
+</beans>
+
+
+
+
+
+
+
+
+
+
+
